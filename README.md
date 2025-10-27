@@ -2,7 +2,7 @@
 Jailbreak for iPod nano 7 using ipod_sun (Code execution on the iPod nano 6th and 7th generation)
 
 ### How?
-This tool builds a modified firmware image that abuses two iPod bugs in order to gain code execution:
+This uses a tool builds a modified firmware image that abuses two iPod bugs in order to gain code execution (better known as ipod_sun), which then adds an application system (better known as iNAS), and then a package manager (originally intended to be pwnbox, now may possibly be PurePKG):
 
 #### 1) Disk swapping
 By swapping the 'disk' and 'osos' sections in a firmware image, the iPod will boot into the standard RetailOS when holding the buttons for disk mode. But, when booting into disk mode the iPod won't verify the 'rsrc' partition as disk mode usually doesn't use it.
