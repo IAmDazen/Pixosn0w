@@ -1,5 +1,5 @@
-# ipod_sun
-Code execution on the iPod nano 6th and 7th generation
+# Pixosn0w
+Jailbreak for iPod nano 7 using ipod_sun (Code execution on the iPod nano 6th and 7th generation)
 
 ### How?
 This tool builds a modified firmware image that abuses two iPod bugs in order to gain code execution:
@@ -25,7 +25,7 @@ arm-none-eabi-gcc
 ```
 
 ## Supported devices:
-- iPod Nano 6th Generation
+- iPod Nano 6th Generation (ipod_sun ONLY)
 - iPod Nano 7th Generation (Mid 2015)
 
 
@@ -56,6 +56,8 @@ cargo r --release -- 0x20000000 0x10000 n7g_bootrom.bin
 See `tools/scsi_decrypter`
 
 # Attribution
+The entire thing is only possible because of [ipod_sun](https://github.com/CUB3D/ipod_sun)
+
 Base.ttf is one of the payloads from [star](https://github.com/comex/star), used as a CFF template
 
 helpers/viafont/original sourced from [here](http://www.publicdomainfiles.com/show_file.php?id=13949894425072)
