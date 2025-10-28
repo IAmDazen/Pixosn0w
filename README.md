@@ -42,6 +42,9 @@ cargo r --release -- --device=nano7-refresh
 # Flash Firmware-repack.MSE over DFU
 ```
 
+## How to boot
+Boot like you're booting into DFU, as far as i understand, the boot image is in the DFU partition and vice versa
+
 ## Dumping bootroms
 ```shell
 # Enable the VROM clock gates
