@@ -1,6 +1,11 @@
 # Pixosn0w
 Jailbreak for iPod nano 7 using ipod_sun (Code execution on the iPod nano 6th and 7th generation)
 
+### Parts of jailbreak process
+Pixosn0w: The initial exploit, from now on in this readme, Pixosn0w vulnerable ipods will be referred to as Pixowinter and invulnerable ipods will be referred to as Pixofever
+Moon: A modified version of ipod_sun, flashes an image with star and disk/osos swapping, makes both images not check rsrc integrity, then flashes the same image but without disk/osos swapping (WIP)
+iNAS: An application system, required for a package manager (NAW)
+pwnbox: A Package Manager that might be used but might not be (NAW)
 ### How?
 This uses a tool builds a modified firmware image that abuses two iPod bugs in order to gain code execution (better known as ipod_sun), which then adds an application system (better known as iNAS), and then a package manager (originally intended to be pwnbox, now may possibly be PurePKG):
 
