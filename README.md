@@ -2,11 +2,10 @@
 Jailbreak for iPod nano 7 using ipod_sun (Code execution on the iPod nano 6th and 7th generation)
 
 ### Parts of jailbreak process
-Pixosn0w: The entire jailbreak
-<sub>from now on in this readme, Pixosn0w vulnerable ipods will be referred to as Pixowinter and invulnerable ipods will be referred to as Pixofever and nonsupported but vulnerable ipods are Pixosummer</sub>
-Moon: A modified version of ipod_sun, flashes an image with star and disk/osos swapping, makes both images not check rsrc integrity, then flashes the same image but without disk/osos swapping (WIP)
-iNAS: An application system, required for a package manager (NAW)
-pwnbox: A Package Manager that might be used but might not be (NAW)
+- Pixosn0w: The entire jailbreak
+- Moon: A modified version of ipod_sun, flashes an image with star and disk/osos swapping, makes both images not check rsrc integrity, then flashes the same image but without disk/osos swapping (WIP)
+- iNAS: An application system, required for a package manager (NAW)
+- pwnbox: A Package Manager that might be used but might not be (NAW)
 ### How?
 This uses a tool builds a modified firmware image that abuses two iPod bugs in order to gain code execution (better known as ipod_sun), which then adds an application system (better known as iNAS), and then a package manager (originally intended to be pwnbox, now may possibly be PurePKG):
 
@@ -31,15 +30,14 @@ arm-none-eabi-gcc
 ```
 
 ## Devices:
-- iPod Nano 6th Generation (Pixosummer)
-- iPod Nano 7th Generation (2012) (Pixofever)
-- iPod Nano 7th Generation (Mid 2015) (Pixowinter)
-
+- iPod Nano 6th Generation (Vulnerable But Unsupported by Pixosn0w)
+- iPod Nano 7th Generation (Mid 2015) (Vulnerable and supported)
+### iPod Nano 7th Generation 2012 is NOT VULNERABLE
 
 # WARNING!
 Some devices are not able to boot into DFU, this may be caused by a non-functional battery.
 
-Bad payloads, incorrectly packed firmware and many other causes CAN and HAVE caused permanent bricks.
+Bad payloads (This may include very early versions of Pixosn0w), incorrectly packed firmware (This may include very early versions of Pixosn0w and bad builds)  and many other causes CAN and HAVE caused permanent bricks.
 
 ## Usage
 ```shell
